@@ -1,0 +1,17 @@
+data:
+  name: "pol"
+  base_path: "${hydra:runtime.cwd}/data/uci/"
+  dtype: "float32"
+  seed: 42
+  train_fraction: 0.45
+  val_fraction: 0.22
+  test_fraction: 0.33
+
+experiment:
+  kernel_type:
+    - "matern32"
+    - "rbf"
+  use_validation: false
+  lr: 0.1
+  n_epochs: 200
+  device: "cuda"

@@ -1,0 +1,3 @@
+# manually install `torch` as per your requirements
+gpytorch
+hydra
